@@ -7,7 +7,7 @@ using System.Text.RegularExpressions;
 
 namespace NameSorterProgramAssessment
 {
-    class UnsortedNames
+    public class UnsortedNames
     {
         public static List<Person> getUnsortedList(string filename)
         {
