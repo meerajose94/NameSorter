@@ -50,18 +50,18 @@ namespace NameSorterProgramAssessment
             if (noLastName.Count > 0)
             {
                 msg = "``INFO :: Given below names has been found without lastname and will be ignored for sorting";
-                ValidatingNames.displayMessage(noLastName, msg);
+                ValidateNamesMessage.displayMessage(noLastName, msg);
                
             }
             if (invalidnoOfGivenNames.Count > 0)
             {
                 msg = "``INFO :: Given name has been found for having more than 3 given names and will be ignored for sorting";
-                ValidatingNames.displayMessage(invalidnoOfGivenNames, msg);
+                ValidateNamesMessage.displayMessage(invalidnoOfGivenNames, msg);
             }
             if (invalidNames.Count > 0)
             { 
                 msg = "``INFO :: Given name contians characters other than alphabets and will be ignored for sorting";
-                ValidatingNames.displayMessage(invalidNames, msg);
+                ValidateNamesMessage.displayMessage(invalidNames, msg);
             }
             Console.WriteLine("The unsorted list of names are ::  ");
             foreach (Person person in people)

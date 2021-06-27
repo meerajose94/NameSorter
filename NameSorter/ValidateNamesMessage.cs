@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace NameSorterProgramAssessment
 {
-    class ValidatingNames
+    class ValidateNamesMessage
     {
         //printing appropriate message for if any names which are not considered for sorting
         public static void displayMessage(ArrayList arr, string message)
