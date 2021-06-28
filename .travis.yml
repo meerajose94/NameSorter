@@ -1,11 +1,8 @@
 language: csharp
 solution: NameSorter.sln
-mono : none
-dotnet: 3.1.2
-
 install:
-- dotnet restore
-
+  - nuget restore NameSorter.sln
+  - nuget install NUnit.Console -Version 3.9.0 -OutputDirectory testrunner
 script:
-  - dotnet build
-  - dotnet test NameSorter/NameSorterTest/NameSorterTest.csproj
+  - msbuild /p:Configuration=Release NameSorter.sln
+  - .NameSorter/NameSorterTest/bin/Debug/netcoreapp3.1/NameSorterTest.dll
